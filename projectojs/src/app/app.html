@@ -1,6 +1,7 @@
-<h1>Bienvenido {{nombre}}</h1>
-<h2>Este sera mi {{description}}</h2>
-<button (click)="cambiarNombre()">Cambiar nombre</button>
-<button (click)="contar()">VAMOS A CONTAR</button>
-<p>{{resultado}}</p>
-<router-outlet />
+<nav>
+    <a routerLink="/">Inicio</a> |
+    <a routerLink="/productos">Productos</a> |
+    <a routerLink="/contacto">Contacto</a>
+</nav>
+<hr>
+<router-outlet></router-outlet>
