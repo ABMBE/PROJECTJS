@@ -1,2 +1,17 @@
+<h1>{{titulo}}</h1>
 
-<p>inicio works!</p>
+<p>encuentra laptops, componentes y perifericos al mejor precio</p>
+<section *ngIf="destacado">
+    <h2>Producto Destacado</h2>
+    <p> {{destacado.nombre}} - S/. {{destacado.precio}}</p>
+    <button (click)="comprar()">Comprar</button>
+    <a routerLink="/productos"></a>        
+</section>
+
+<section *ngIf="!destacado">
+    <h2>Bienvenida</h2>
+    <p>En Compuservix, nos apasiona la tecnología y estamos comprometidos a ofrecerte las mejores soluciones informáticas para satisfacer todas tus necesidades tecnológicas. Ya sea que estés buscando una nueva laptop, componentes de alta calidad o periféricos innovadores, tenemos todo lo que necesitas para potenciar tu experiencia digital.</p>
+    <p>{{inicio.nombre}}</p>
+    <p>{{inicio.descripcion}}</p>
+    <div>
+    </div>
